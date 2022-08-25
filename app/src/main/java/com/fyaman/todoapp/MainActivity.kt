@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         toDoAdapter = ToDoAdapter(toDoList)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = toDoAdapter
-        // GitHub Ogreniyorum
 
         try {
             val database = this.openOrCreateDatabase("ToDo", Context.MODE_PRIVATE,null)
